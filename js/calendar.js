@@ -1255,7 +1255,8 @@ if(!String.prototype.formatNum) {
 		return new Date(year, n, p + (offsetDays ? offsetDays : 0), 0, 0, 0);
 	}
 
-	$.fn.calendar = function(params) {
+	$.fn.calendar = function(params, underscore) {
+		_ = underscore;
 		return new Calendar(params, this);
 	}
 }(jQuery));
